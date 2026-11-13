@@ -49,22 +49,31 @@ body{
    font-family:var(--fonte-texto);
 }
 header{
-background-color: rgb(50, 119, 4);
-color: rgb(255, 255, 255);
+background-color:var(--cor-primaria);
+color:var(--cor-contraste);
 text-align: center;
-max-width:800px;
 margin:0 auto;
 padding:16px
 }
 main{
-background-color: rgb(60, 122, 79);
-color: rgba(255, 255, 255, 0.932);
-max-width:800px;
+background-color:var(--cor-fundo);
+color:var(--cor-primaria);
 margin:0 auto;
-padding:16px
+padding:16px;
+display:flex;
+flex-wrap:wrap;
 }
 article{
    display:flex;
+   box-shadow: 2px 2px 10px rgba(0,0,0,0.3);
+   margin: 16px;
+   gap: 16px;
+   padding:16px;
+   flex:1 1 25%;
+   flex-direction: column;
+   align-items: center;
+   text-align: center;
+   justify-content: center;
 }
 img{
    width:80px;
@@ -72,4 +81,13 @@ img{
 }
 .artigo-autor{
    font-weight: bold;
+}
+.btn-tema-escuro{
+   position: fixed;
+   bottom: 16px;
+   right: 16px;
+   font-size: 32px;
+   padding: 12px;
+   background-color: var(--cor-primaria);
+   border-radius: 50%;
 }
